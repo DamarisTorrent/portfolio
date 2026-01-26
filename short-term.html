@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Short-Term Goals | Charlotte Damaris Torrent</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">Damaris <span>Torrent</span></a>
+            <button class="mobile-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="introduction.html">Introduction</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="career-goal.html">Career Goal</a></li>
+                <li><a href="long-term.html">Long-Term</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="short-term.html" class="active">Short-Term</a></li>
+                <li><a href="linkedin.html">LinkedIn</a></li>
+                <li><a href="artifacts.html">Artifacts</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <h1>Short-Term Goals</h1>
+        <p>Immediate objectives to turn passion into reality</p>
+    </header>
+
+    <!-- Short-Term Goals Section -->
+    <section style="background: var(--pearl);">
+        <div class="section-container">
+            <a href="index.html" class="back-home">← Back to Home</a>
+            <div class="short-term-grid">
+                <div class="short-term-card">
+                    <span class="card-number">01</span>
+                    <h3>Complete Bachelor's Degree</h3>
+                    <p>
+                        Finish my final two semesters at Florida State College at Jacksonville, earning my Bachelor's Degree in Information Systems. 
+                        This milestone represents years of balancing professional work with academic growth.
+                    </p>
+                    <span class="card-timeline">Target: Spring 2026</span>
+                </div>
+                <div class="short-term-card">
+                    <span class="card-number">02</span>
+                    <h3>AWS Cloud Engineer Certification</h3>
+                    <p>
+                        Earn AWS Certified Solutions Architect or DevOps Engineer certification to formalize my cloud infrastructure expertise 
+                        and open doors to more advanced DevOps and architecture roles.
+                    </p>
+                    <span class="card-timeline">Target: Late 2026</span>
+                </div>
+                <div class="short-term-card">
+                    <span class="card-number">03</span>
+                    <h3>Expand AI Agent Expertise</h3>
+                    <p>
+                        Deepen expertise in agentic AI workflows, building on CERTA AI Agent success. Explore emerging frameworks and 
+                        contribute to open-source AI agent projects.
+                    </p>
+                    <span class="card-timeline">Target: Ongoing 2026</span>
+                </div>
+                <div class="short-term-card">
+                    <span class="card-number">04</span>
+                    <h3>Technical Leadership Growth</h3>
+                    <p>
+                        Build on interim tech lead experience by seeking formal leadership opportunities. Mentor new team members and 
+                        contribute to architectural decision-making processes.
+                    </p>
+                    <span class="card-timeline">Target: 2026-2027</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">Damaris <span>Torrent</span></div>
+            <nav class="footer-nav">
+                <a href="index.html">Home</a>
+                <a href="introduction.html">Introduction</a>
+                <a href="resume.html">Resume</a>
+                <a href="career-goal.html">Career Goal</a>
+                <a href="skills.html">Skills</a>
+                <a href="artifacts.html">Artifacts</a>
+            </nav>
+            <p class="footer-copy">© 2025 Charlotte Damaris Torrent. Built with passion in Charleston, SC.</p>
+        </div>
+    </footer>
+
+    <script>
+        const mobileToggle = document.querySelector('.mobile-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        mobileToggle.addEventListener('click', () => {
+            mobileToggle.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
+
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileToggle.classList.remove('active');
+                navLinks.classList.remove('active');
+            });
+        });
+
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+</html>

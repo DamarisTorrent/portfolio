@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills & Interests | Charlotte Damaris Torrent</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">Damaris <span>Torrent</span></a>
+            <button class="mobile-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="introduction.html">Introduction</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="career-goal.html">Career Goal</a></li>
+                <li><a href="long-term.html">Long-Term</a></li>
+                <li><a href="skills.html" class="active">Skills</a></li>
+                <li><a href="short-term.html">Short-Term</a></li>
+                <li><a href="linkedin.html">LinkedIn</a></li>
+                <li><a href="artifacts.html">Artifacts</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <h1>Current Skills & Interests</h1>
+        <p>The technical toolkit and passions I bring to every project</p>
+    </header>
+
+    <!-- Current Skills Section -->
+    <section style="background: var(--sand-light);">
+        <div class="section-container">
+            <a href="index.html" class="back-home">← Back to Home</a>
+            <div class="skills-categories">
+                <div class="skill-category">
+                    <div class="skill-category-icon">💻</div>
+                    <h3 class="skill-category-title">Programming Languages</h3>
+                    <div class="skill-list">
+                        <span class="skill-item">Java</span>
+                        <span class="skill-item">Python</span>
+                        <span class="skill-item">JavaScript</span>
+                        <span class="skill-item">C++</span>
+                        <span class="skill-item">SQL</span>
+                        <span class="skill-item">Visual Basic</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-category-icon">🧠</div>
+                    <h3 class="skill-category-title">AI/ML Technologies</h3>
+                    <div class="skill-list">
+                        <span class="skill-item">LangChain</span>
+                        <span class="skill-item">LlamaIndex</span>
+                        <span class="skill-item">Spring AI</span>
+                        <span class="skill-item">RAG Pipelines</span>
+                        <span class="skill-item">Vector Processing</span>
+                        <span class="skill-item">Embeddings</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-category-icon">☁️</div>
+                    <h3 class="skill-category-title">Cloud & Infrastructure</h3>
+                    <div class="skill-list">
+                        <span class="skill-item">AWS S3</span>
+                        <span class="skill-item">AWS ElastiCache</span>
+                        <span class="skill-item">Redis</span>
+                        <span class="skill-item">Docker</span>
+                        <span class="skill-item">CI/CD Pipelines</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-category-icon">🗄️</div>
+                    <h3 class="skill-category-title">Databases & Tools</h3>
+                    <div class="skill-list">
+                        <span class="skill-item">PostgreSQL</span>
+                        <span class="skill-item">Neo4j</span>
+                        <span class="skill-item">Oracle</span>
+                        <span class="skill-item">Git</span>
+                        <span class="skill-item">FastAPI</span>
+                        <span class="skill-item">Agile/Scrum</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="interests-section">
+                <div class="section-header" style="margin-bottom: 0;">
+                    <h3 class="section-title" style="font-size: 1.8rem;">Personal Interests</h3>
+                    <p class="section-subtitle">What inspires me beyond the keyboard</p>
+                </div>
+                <div class="interests-grid">
+                    <div class="interest-card">
+                        <div class="interest-icon">🏄‍♀️</div>
+                        <div class="interest-content">
+                            <h4>Surfing</h4>
+                            <p>Charleston's waves teach patience, timing, and respect for forces beyond our control, lessons that translate directly to navigating complex technical challenges.</p>
+                        </div>
+                    </div>
+                    <div class="interest-card">
+                        <div class="interest-icon">🐠</div>
+                        <div class="interest-content">
+                            <h4>Aquariums</h4>
+                            <p>Maintaining thriving aquatic ecosystems mirrors building robust software systems: both require understanding complex interdependencies and careful balance.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">Damaris <span>Torrent</span></div>
+            <nav class="footer-nav">
+                <a href="index.html">Home</a>
+                <a href="introduction.html">Introduction</a>
+                <a href="resume.html">Resume</a>
+                <a href="career-goal.html">Career Goal</a>
+                <a href="skills.html">Skills</a>
+                <a href="artifacts.html">Artifacts</a>
+            </nav>
+            <p class="footer-copy">© 2025 Charlotte Damaris Torrent. Built with passion in Charleston, SC.</p>
+        </div>
+    </footer>
+
+    <script>
+        const mobileToggle = document.querySelector('.mobile-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        mobileToggle.addEventListener('click', () => {
+            mobileToggle.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
+
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileToggle.classList.remove('active');
+                navLinks.classList.remove('active');
+            });
+        });
+
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+</html>

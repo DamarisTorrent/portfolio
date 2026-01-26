@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Long-Term Goals | Charlotte Damaris Torrent</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">Damaris <span>Torrent</span></a>
+            <button class="mobile-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="introduction.html">Introduction</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="career-goal.html">Career Goal</a></li>
+                <li><a href="long-term.html" class="active">Long-Term</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="short-term.html">Short-Term</a></li>
+                <li><a href="linkedin.html">LinkedIn</a></li>
+                <li><a href="artifacts.html">Artifacts</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <h1>Long-Term Goals</h1>
+        <p>Charting my course for the years ahead</p>
+    </header>
+
+    <!-- Long-Term Goals Section -->
+    <section style="background: var(--pearl);">
+        <div class="section-container">
+            <a href="index.html" class="back-home">← Back to Home</a>
+            <div class="goals-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-year">2026 - 2028</div>
+                    <h3 class="timeline-title">Senior AI Engineer & Technical Lead</h3>
+                    <p class="timeline-desc">
+                        Advance to a senior engineering role with increased leadership responsibilities. Lead a team focused on AI integration 
+                        for government systems, mentoring junior developers and establishing best practices for responsible AI deployment in 
+                        federal environments. Continue building expertise in cloud architecture and DevOps.
+                    </p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2028 - 2030</div>
+                    <h3 class="timeline-title">Principal Engineer / Solutions Architect</h3>
+                    <p class="timeline-desc">
+                        Transition into a principal-level role where I architect large-scale modernization initiatives across multiple agencies. 
+                        Develop proprietary methodologies for AI-assisted legacy code analysis and migration. Become a recognized thought leader 
+                        in government technology modernization, speaking at conferences and publishing research.
+                    </p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2030 - 2035</div>
+                    <h3 class="timeline-title">Director of AI Modernization / CTO Track</h3>
+                    <p class="timeline-desc">
+                        Lead an entire practice area or division focused on AI-powered government transformation. Influence policy discussions 
+                        around responsible AI adoption in public sector. Build partnerships between private sector innovation and public sector 
+                        needs. Potentially explore founding a specialized consultancy or joining government in a senior technology leadership capacity.
+                    </p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">Beyond 2035</div>
+                    <h3 class="timeline-title">Industry Visionary & Mentor</h3>
+                    <p class="timeline-desc">
+                        Establish a lasting legacy in government technology modernization. Mentor the next generation of public sector technologists. 
+                        Contribute to open-source tools that democratize AI-powered modernization. Help shape national technology policy to ensure 
+                        government systems remain secure, efficient, and accessible for all Americans.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">Damaris <span>Torrent</span></div>
+            <nav class="footer-nav">
+                <a href="index.html">Home</a>
+                <a href="introduction.html">Introduction</a>
+                <a href="resume.html">Resume</a>
+                <a href="career-goal.html">Career Goal</a>
+                <a href="skills.html">Skills</a>
+                <a href="artifacts.html">Artifacts</a>
+            </nav>
+            <p class="footer-copy">© 2025 Charlotte Damaris Torrent. Built with passion in Charleston, SC.</p>
+        </div>
+    </footer>
+
+    <script>
+        const mobileToggle = document.querySelector('.mobile-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        mobileToggle.addEventListener('click', () => {
+            mobileToggle.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
+
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileToggle.classList.remove('active');
+                navLinks.classList.remove('active');
+            });
+        });
+
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+</html>

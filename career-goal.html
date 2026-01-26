@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Goal | Charlotte Damaris Torrent</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">Damaris <span>Torrent</span></a>
+            <button class="mobile-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="introduction.html">Introduction</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="career-goal.html" class="active">Career Goal</a></li>
+                <li><a href="long-term.html">Long-Term</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="short-term.html">Short-Term</a></li>
+                <li><a href="linkedin.html">LinkedIn</a></li>
+                <li><a href="artifacts.html">Artifacts</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <h1>Career Goal</h1>
+        <p>My vision for the future of government technology</p>
+    </header>
+
+    <!-- Career Goal Section -->
+    <section class="section-dark">
+        <div class="section-container">
+            <a href="index.html" class="back-home" style="color: var(--seafoam);">← Back to Home</a>
+            <div class="goal-statement">
+                <p>
+                    My career goal is to become a recognized expert in AI-driven government modernization, serving as a bridge between 
+                    cutting-edge artificial intelligence and the critical systems that serve millions of Americans. I envision myself 
+                    leading transformative initiatives that take aging government codebases, some decades old, and revitalize them using 
+                    AI-powered analysis and automated refactoring in a fraction of the traditional timeline.
+                </p>
+                <p style="margin-top: 1rem;">
+                    Just as the ocean has taught me patience and respect for powerful forces, I approach legacy systems with both reverence 
+                    for their critical function and excitement for their potential evolution. I want to be the person agencies call when they 
+                    need to modernize responsibly, someone who understands both the technical complexity and the human impact of these systems.
+                </p>
+                <p style="margin-top: 1rem;">
+                    Ultimately, I aim to help government work better for everyone by making AI accessible, ethical, and genuinely useful 
+                    for public servants and the citizens they serve.
+                </p>
+            </div>
+            <div class="goal-values">
+                <div class="value-item">
+                    <div class="value-icon">🤖</div>
+                    <h4 class="value-title">AI Excellence</h4>
+                    <p class="value-desc">Mastering generative AI to solve real-world government challenges</p>
+                </div>
+                <div class="value-item">
+                    <div class="value-icon">🏛️</div>
+                    <h4 class="value-title">Public Service</h4>
+                    <p class="value-desc">Using technology to improve how government serves citizens</p>
+                </div>
+                <div class="value-item">
+                    <div class="value-icon">🔄</div>
+                    <h4 class="value-title">Modernization</h4>
+                    <p class="value-desc">Transforming legacy systems into efficient, modern platforms</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">Damaris <span>Torrent</span></div>
+            <nav class="footer-nav">
+                <a href="index.html">Home</a>
+                <a href="introduction.html">Introduction</a>
+                <a href="resume.html">Resume</a>
+                <a href="career-goal.html">Career Goal</a>
+                <a href="skills.html">Skills</a>
+                <a href="artifacts.html">Artifacts</a>
+            </nav>
+            <p class="footer-copy">© 2025 Charlotte Damaris Torrent. Built with passion in Charleston, SC.</p>
+        </div>
+    </footer>
+
+    <script>
+        const mobileToggle = document.querySelector('.mobile-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        mobileToggle.addEventListener('click', () => {
+            mobileToggle.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
+
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileToggle.classList.remove('active');
+                navLinks.classList.remove('active');
+            });
+        });
+
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+</html>

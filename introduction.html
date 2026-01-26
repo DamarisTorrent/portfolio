@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction | Charlotte Damaris Torrent</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">Damaris <span>Torrent</span></a>
+            <button class="mobile-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="introduction.html" class="active">Introduction</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="career-goal.html">Career Goal</a></li>
+                <li><a href="long-term.html">Long-Term</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="short-term.html">Short-Term</a></li>
+                <li><a href="linkedin.html">LinkedIn</a></li>
+                <li><a href="artifacts.html">Artifacts</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <h1>Introduction</h1>
+        <p>Getting to know the person behind the code</p>
+    </header>
+
+    <!-- Introduction Section -->
+    <section style="background: var(--pearl);">
+        <div class="section-container">
+            <a href="index.html" class="back-home">← Back to Home</a>
+            <div class="intro-content">
+                <div class="intro-image">
+                    <div class="intro-image-frame">
+                        <div class="intro-visual">
+                            <span class="intro-visual-icon">🌊</span>
+                            <span class="intro-visual-text">Ocean-Inspired Innovation</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="intro-text">
+                    <h3>Where Technology Meets the Tide</h3>
+                    <p>
+                        Welcome to my professional portfolio! I'm Charlotte Damaris Torrent, a software developer based in Charleston, South Carolina, 
+                        where the rhythm of the ocean influences everything I do. Just as the tide constantly reshapes the shoreline, I believe 
+                        technology should continuously evolve to better serve people.
+                    </p>
+                    <p>
+                        My journey in tech has been anything but linear. From pioneering remote work in the late 1990s at a 600-person organization 
+                        to now building AI platforms that serve U.S. government agencies, I've learned that the best solutions come from persistence, 
+                        adaptability, and a willingness to dive into uncharted waters.
+                    </p>
+                    <p>
+                        When I'm not architecting cloud solutions or training AI models, you'll find me catching waves at Folly Beach or mesmerized 
+                        by the intricate ecosystems in my home aquariums. There's something profound about watching complex systems work in harmony, 
+                        whether it's a coral reef or a well-designed software architecture.
+                    </p>
+                    <p>
+                        <strong>How This Portfolio Works:</strong> Navigate through the sections above to explore my resume, career aspirations, 
+                        technical skills, and work samples. Each section represents a different facet of my professional journey.
+                    </p>
+                    <div class="intro-highlights">
+                        <div class="highlight-item">
+                            <div class="highlight-number">8+</div>
+                            <div class="highlight-label">Years Experience</div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-number">$500K</div>
+                            <div class="highlight-label">Contract Growth</div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-number">3+</div>
+                            <div class="highlight-label">Gov Agencies Served</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">Damaris <span>Torrent</span></div>
+            <nav class="footer-nav">
+                <a href="index.html">Home</a>
+                <a href="introduction.html">Introduction</a>
+                <a href="resume.html">Resume</a>
+                <a href="career-goal.html">Career Goal</a>
+                <a href="skills.html">Skills</a>
+                <a href="artifacts.html">Artifacts</a>
+            </nav>
+            <p class="footer-copy">© 2025 Charlotte Damaris Torrent. Built with passion in Charleston, SC.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile navigation toggle
+        const mobileToggle = document.querySelector('.mobile-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        mobileToggle.addEventListener('click', () => {
+            mobileToggle.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
+
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileToggle.classList.remove('active');
+                navLinks.classList.remove('active');
+            });
+        });
+
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+</html>
